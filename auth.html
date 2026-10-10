@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d32">
+  <title>Connexion | Billo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="node_modules/crypto-js/crypto-js.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="auth">
+  <main class="auth-layout">
+    <section class="welcome-panel" aria-label="Billo">
+      <a class="brand" href="auth.html" aria-label="Billo, accueil">
+        <span class="brand-mark" aria-hidden="true">b.</span>
+        <span>billo</span>
+      </a>
+      <div class="welcome-copy">
+        <p class="eyebrow">VOTRE ESPACE, TOUT SIMPLEMENT</p>
+        <h1>Les bonnes choses commencent ici.</h1>
+        <p>Un espace à vous, prêt quand vous l’êtes.</p>
+      </div>
+      <div class="welcome-art" aria-hidden="true">
+        <div class="art-sun"></div>
+        <div class="art-hill art-hill-back"></div>
+        <div class="art-hill art-hill-front"></div>
+        <span class="art-spark spark-one">✳</span>
+        <span class="art-spark spark-two">✳</span>
+      </div>
+      <p class="panel-footnote">Un compte. Un nouvel élan.</p>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-wrap">
+        <p class="eyebrow form-eyebrow">RAVI DE VOUS REVOIR</p>
+        <h2 id="form-title">Connexion</h2>
+        <p class="form-intro" id="form-intro">Retrouvez votre espace personnel.</p>
+
+        <div class="mode-switch" role="tablist" aria-label="Choisir une action">
+          <button class="mode-button is-active" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-form" data-mode="login">Connexion</button>
+          <button class="mode-button" id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="signup-form" data-mode="signup">Créer un compte</button>
+        </div>
+
+        <form class="auth-form" id="login-form" novalidate>
+          <label for="login-email">Adresse e-mail</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+          <div class="label-row">
+            <label for="login-password">Mot de passe</label>
+          </div>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Votre mot de passe" required>
+          <p class="form-error" id="login-error" role="alert" aria-live="polite"></p>
+          <button class="submit-button" type="submit">Se connecter <span aria-hidden="true">→</span></button>
+        </form>
+
+        <form class="auth-form" id="signup-form" hidden novalidate>
+          <label for="signup-email">Adresse e-mail</label>
+          <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+          <label for="signup-password">Mot de passe</label>
+          <input id="signup-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="8 caractères minimum" required>
+          <p class="form-error" id="signup-error" role="alert" aria-live="polite"></p>
+          <button class="submit-button" type="submit">Créer mon compte <span aria-hidden="true">→</span></button>
+        </form>
+
+        <p class="privacy-note"><span class="lock-icon" aria-hidden="true">⌑</span> Compte enregistré dans la base locale.</p>
+      </div>
+      <footer class="form-footer">© 2026 Billo</footer>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "email": "test@test.com",
+      "mdp": "6365f9e4578ba684e91547dfe52e17b5",
+      "auteur": false,
+      "poivre": "32a65ab057bfc64ce76b714f23a213b7",
+      "sel": "317ccf7f3daf87c75c279d793730e990",
+      "id": "LmFpGlgHNO4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

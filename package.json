@@ -1,0 +1,18 @@
+{
+  "name": "billo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "json-server db.json --port 3434--static .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "json-server": "^1.0.0-beta.15"
+  }
+}

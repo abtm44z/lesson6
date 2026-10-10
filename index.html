@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d32">
+  <title>Mon espace | Billo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="home">
+  <main class="home-page">
+    <header class="home-header">
+      <a class="brand home-brand" href="index.html" aria-label="Billo, accueil">
+        <span class="brand-mark" aria-hidden="true">b.</span>
+        <span>billo</span>
+      </a>
+      <button class="logout-button" id="logout-button" type="button"><span aria-hidden="true">↗</span> Se déconnecter</button>
+    </header>
+    <section class="home-content" aria-labelledby="welcome-title">
+      <div class="success-mark" aria-hidden="true"><span>✓</span></div>
+      <p class="eyebrow">VOTRE ESPACE BILLO</p>
+      <h1 id="welcome-title">Vous etes connecter<span class="period">.</span></h1>
+      <p class="home-greeting" id="home-greeting"></p>
+      <div class="home-rule"></div>
+      <p class="home-caption">Heureux de vous retrouver ici.</p>
+    </section>
+    <footer class="home-footer"><span>Simplement chez vous.</span><span>© 2026 Billo</span></footer>
+  </main>
+</body>
+</html>
