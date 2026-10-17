@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d32">
+  <title>Écrire un article | Billo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="write-article">
+  <main class="site-page">
+    <header class="site-header">
+      <a class="brand home-brand" href="index.html" aria-label="Billo, accueil">
+        <span class="brand-mark" aria-hidden="true">b.</span><span>billo</span>
+      </a>
+      <nav class="home-nav" aria-label="Navigation principale">
+        <a class="text-link" href="articles.html">Les articles</a>
+        <a class="logout-button" href="index.html">Mon espace</a>
+      </nav>
+    </header>
+    <section class="editor-content" aria-labelledby="editor-title">
+      <p class="eyebrow">CONTRIBUTION</p>
+      <h1 id="editor-title">Écrire un article<span class="period">.</span></h1>
+      <p class="page-intro">Partagez une idée avec la communauté Billo.</p>
+
+      <div class="notice notice-error" id="author-access-message" role="alert" hidden>
+        <h2>Accès réservé aux auteurs</h2>
+        <p>Vous devez être connecté avec un compte autorisé (auteur = true) pour écrire un article.</p>
+        <a class="text-link" href="articles.html">← Retour aux articles</a>
+      </div>
+
+      <form class="article-form" id="article-form" hidden>
+        <label for="article-title">Titre</label>
+        <input id="article-title" name="titre" type="text" maxlength="160" placeholder="Le titre de votre article" required>
+        <label for="article-body">Article</label>
+        <textarea id="article-body" name="article" rows="12" placeholder="Rédigez votre article…" required></textarea>
+        <label class="checkbox-row" for="article-publish">
+          <input id="article-publish" name="publier" type="checkbox">
+          <span>Publier immédiatement</span>
+        </label>
+        <p class="form-hint">Si cette case n’est pas cochée, l’article sera enregistré comme brouillon.</p>
+        <p class="form-error" id="article-error" role="alert" aria-live="polite"></p>
+        <p class="form-success" id="article-success" role="status" aria-live="polite"></p>
+        <div class="form-actions">
+          <a class="logout-button" href="articles.html">Annuler</a>
+          <button class="submit-button" type="submit">Enregistrer l’article <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+    </section>
+    <footer class="home-footer"><a class="text-link" href="index.html">← Retour à mon espace</a><span>© 2026 Billo</span></footer>
+  </main>
+</body>
+</html>

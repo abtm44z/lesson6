@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d32">
+  <title>Administration | Billo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="admin">
+  <main class="site-page">
+    <header class="site-header">
+      <a class="brand home-brand" href="index.html" aria-label="Billo, accueil">
+        <span class="brand-mark" aria-hidden="true">b.</span><span>billo</span>
+      </a>
+      <nav class="home-nav" aria-label="Navigation principale">
+        <a class="text-link" href="articles.html">Les articles</a>
+        <a class="text-link" href="validation.html">Validation</a>
+        <a class="logout-button" href="index.html">Mon espace</a>
+      </nav>
+    </header>
+    <section class="admin-content" aria-labelledby="admin-title">
+      <p class="eyebrow">ESPACE DE GESTION</p>
+      <h1 id="admin-title">Administration<span class="period">.</span></h1>
+      <p class="page-intro">Gérez les comptes utilisateurs et la publication des articles.</p>
+
+      <div class="notice notice-error" id="admin-access-message" role="alert" hidden>
+        <h2>Accès réservé à l’administration</h2>
+        <p>Connectez-vous avec un compte dont le champ <strong>admin</strong> est égal à true.</p>
+        <a class="text-link" href="index.html">← Retour à mon espace</a>
+      </div>
+
+      <div id="admin-dashboard" hidden>
+        <p class="admin-feedback" id="admin-feedback" role="status" aria-live="polite"></p>
+        <section class="admin-section" aria-labelledby="users-title">
+          <div class="admin-section-heading">
+            <div><p class="eyebrow">COMPTES</p><h2 id="users-title">Utilisateurs</h2></div>
+            <span class="admin-section-icon" aria-hidden="true">♙</span>
+          </div>
+          <div class="admin-role-groups" id="admin-users">
+            <section class="admin-role-group" aria-labelledby="regular-users-title">
+              <h3 id="regular-users-title">Utilisateurs</h3>
+              <div class="admin-list" id="regular-users-list"><p class="loading-message">Chargement…</p></div>
+            </section>
+            <section class="admin-role-group" aria-labelledby="authors-title">
+              <h3 id="authors-title">Auteurs</h3>
+              <div class="admin-list" id="authors-list"><p class="loading-message">Chargement…</p></div>
+            </section>
+            <section class="admin-role-group" aria-labelledby="admins-title">
+              <h3 id="admins-title">Administrateurs</h3>
+              <div class="admin-list" id="admins-list"><p class="loading-message">Chargement…</p></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="admin-section" aria-labelledby="articles-title">
+          <div class="admin-section-heading">
+            <div><p class="eyebrow">CONTENU</p><h2 id="articles-title">Articles</h2></div>
+            <a class="create-article-button" href="ecrire.html">Créer un article <span aria-hidden="true">＋</span></a>
+          </div>
+          <div class="admin-list" id="admin-articles"><p class="loading-message">Chargement…</p></div>
+        </section>
+      </div>
+    </section>
+    <footer class="home-footer"><a class="text-link" href="index.html">← Retour à mon espace</a><span>© 2026 Billo</span></footer>
+  </main>
+</body>
+</html>

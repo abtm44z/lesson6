@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "json-server db.json --port 3434--static .",
+    "start": "json-server db.json --port 3434 --static .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

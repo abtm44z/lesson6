@@ -4,9 +4,67 @@
       "email": "test@test.com",
       "mdp": "6365f9e4578ba684e91547dfe52e17b5",
       "auteur": false,
+      "admin": false,
       "poivre": "32a65ab057bfc64ce76b714f23a213b7",
       "sel": "317ccf7f3daf87c75c279d793730e990",
       "id": "LmFpGlgHNO4"
+    },
+    {
+      "email": "billo.balde@icloud.com",
+      "mdp": "931c500695b61e0017f08ca22d8001a9",
+      "auteur": false,
+      "admin": true,
+      "poivre": "21b59ccd310905c21b1061cfb04f305c",
+      "sel": "31835c0a9bdb862e778a6cbcf1394b0c",
+      "id": "rLuAhQP-LjU"
+    },
+    {
+      "email": "test2.0@gmail.com",
+      "mdp": "7d9ff79f35d433446ed1dbfc2af1c21e",
+      "auteur": true,
+      "admin": false,
+      "poivre": "2260feadcf7d352dc2501f425d72e17c",
+      "sel": "50dbb77bb079bcaa73a5791519b41d34",
+      "id": "d5EdjZOJ8Ic"
+    },
+    {
+      "email": "test1.0@icloud.com",
+      "mdp": "eb5f05d9bce027458976643b2257e3d6",
+      "auteur": true,
+      "admin": false,
+      "poivre": "4e8311e938a6597977cddbaad46f44e9",
+      "sel": "e8fdde33787846e62150bd299ad9e12a",
+      "id": "m1NgnHob2J0"
+    }
+  ],
+  "article": [],
+  "authorRequests": [
+    {
+      "userId": "d5EdjZOJ8Ic",
+      "email": "test2.0@gmail.com",
+      "justification": "je souhaite écrire un article pertinent sur les récents blocus dans le monde",
+      "status": "approved",
+      "date": "2026-10-17T15:24:34.431Z",
+      "id": "CVSJ-8sqaGE",
+      "reviewedAt": "2026-10-17T15:25:13.072Z"
+    },
+    {
+      "userId": "m1NgnHob2J0",
+      "email": "test1.0@icloud.com",
+      "justification": "b ffxh,,,gh,f",
+      "status": "approved",
+      "date": "2026-10-17T15:28:04.663Z",
+      "id": "MM4n_HrE-vA",
+      "reviewedAt": "2026-10-17T15:29:22.817Z"
+    },
+    {
+      "userId": "m1NgnHob2J0",
+      "email": "test1.0@icloud.com",
+      "justification": "b ffxh,,,gh,f",
+      "status": "approved",
+      "date": "2026-10-17T15:28:06.657Z",
+      "id": "aYsUvYs_D-M",
+      "reviewedAt": "2026-10-17T15:28:41.267Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

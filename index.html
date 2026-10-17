@@ -18,7 +18,13 @@
         <span class="brand-mark" aria-hidden="true">b.</span>
         <span>billo</span>
       </a>
-      <button class="logout-button" id="logout-button" type="button"><span aria-hidden="true">↗</span> Se déconnecter</button>
+      <nav class="home-nav" aria-label="Navigation principale">
+        <a class="text-link" href="articles.html">Les articles</a>
+        <a class="text-link" id="write-article-link" href="ecrire.html" hidden>Écrire un article</a>
+        <a class="text-link" id="admin-link" href="admin.html" hidden>Administration</a>
+        <a class="text-link" id="validation-link" href="validation.html" hidden>Validation</a>
+        <button class="logout-button" id="logout-button" type="button"><span aria-hidden="true">↗</span> Se déconnecter</button>
+      </nav>
     </header>
     <section class="home-content" aria-labelledby="welcome-title">
       <div class="success-mark" aria-hidden="true"><span>✓</span></div>
@@ -27,6 +33,20 @@
       <p class="home-greeting" id="home-greeting"></p>
       <div class="home-rule"></div>
       <p class="home-caption">Heureux de vous retrouver ici.</p>
+    </section>
+    <section class="author-request-section" id="author-request-section" aria-labelledby="author-request-title" hidden>
+      <div class="author-request-card">
+        <p class="eyebrow">CONTRIBUER</p>
+        <h2 id="author-request-title">Devenir auteur</h2>
+        <p class="author-request-intro">Présentez votre projet à l’équipe Billo. Un administrateur étudiera votre demande.</p>
+        <p class="author-request-status" id="author-request-status" role="status" aria-live="polite"></p>
+        <form id="author-request-form" class="article-form" hidden>
+          <label for="author-justification">Pourquoi souhaitez-vous devenir auteur ?</label>
+          <textarea id="author-justification" name="justification" rows="5" maxlength="1200" placeholder="Expliquez votre motivation et les sujets que vous aimeriez partager…" required></textarea>
+          <p class="form-error" id="author-request-error" role="alert" aria-live="polite"></p>
+          <button class="submit-button" type="submit">Envoyer ma demande <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
     </section>
     <footer class="home-footer"><span>Simplement chez vous.</span><span>© 2026 Billo</span></footer>
   </main>

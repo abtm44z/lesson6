@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d32">
+  <title>Les articles | Billo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="articles">
+  <main class="site-page">
+    <header class="site-header">
+      <a class="brand home-brand" href="index.html" aria-label="Billo, accueil">
+        <span class="brand-mark" aria-hidden="true">b.</span><span>billo</span>
+      </a>
+      <nav class="home-nav" aria-label="Navigation principale">
+        <a class="text-link" id="write-article-link" href="ecrire.html" hidden>Écrire un article</a>
+        <a class="text-link" id="admin-link" href="admin.html" hidden>Administration</a>
+        <a class="text-link" id="validation-link" href="validation.html" hidden>Validation</a>
+        <a class="logout-button" id="account-link" href="auth.html">Se connecter</a>
+      </nav>
+    </header>
+    <section class="articles-content" aria-labelledby="articles-title">
+      <p class="eyebrow">LE JOURNAL BILLO</p>
+      <h1 id="articles-title">Nos articles<span class="period">.</span></h1>
+      <p class="page-intro">Toutes les idées et les histoires, des plus récentes aux plus anciennes.</p>
+      <a class="create-article-button" href="ecrire.html">Créer un article <span aria-hidden="true">＋</span></a>
+      <div class="article-list" id="article-list" aria-live="polite">
+        <p class="loading-message">Chargement des articles…</p>
+      </div>
+    </section>
+    <footer class="home-footer"><a class="text-link" href="index.html">← Retour à mon espace</a><span>© 2026 Billo</span></footer>
+  </main>
+</body>
+</html>
